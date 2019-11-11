@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      IFPR Notificações
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label>E-mail:</ion-label>
+   <ion-input type="text" name="nome" [(ngModel)]="responsavel.email" color="secondary"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Senha:</ion-label>
+     <ion-input type="password" name="nome" [(ngModel)]="responsavel.senha" color="secondary"></ion-input>
+  </ion-item>
+
+  <ion-button (click)="logar()" color="secondary">Acessar</ion-button>
+
+  <h6>Não possui conta? <a href='cadastro'>Cadastre-se</a></h6>
+
+</ion-content>
